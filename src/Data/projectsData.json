@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "image": "wrexa-assets/images/white-wall-living-room.png",
+        "category": "News",
+        "date": "January 13, 2022",
+        "title": "Designed by experts, inspired by real life",
+        "author": {
+            "name": "Pela Gunder",
+            "avatar": "wrexa-assets/images/avatar.png"
+        },
+        "link": "#"
+    },
+    {
+        "id": 2,
+        "image": "wrexa-assets/images/bathroom-view.png",
+        "category": "News",
+        "date": "January 13, 2022",
+        "title": "Bathrooms 2022 - only with us you will learn the real trends",
+        "author": {
+            "name": "Ethan O.Son",
+            "avatar": "wrexa-assets/images/avatar-male2.png"
+        },
+        "link": "#"
+    },
+    {
+        "id": 3,
+        "image": "wrexa-assets/images/living-room-interior-wall.png",
+        "category": "News",
+        "date": "January 13, 2022",
+        "title": "Are you decorating your kitchen? Get inspired!",
+        "author": {
+            "name": "Hannah Redmond",
+            "avatar": "wrexa-assets/images/avatar-women1.png"
+        },
+        "link": "#"
+    }
+]

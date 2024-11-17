@@ -1,0 +1,37 @@
+{
+    "0": {
+        "keyAchievements": "Developed a QA automation framework using Cypress that increased test coverage by 70%, significantly enhancing the quality index of the web application.",
+        "responsibilities": [
+            "Generated comprehensive test reports using Confluence to manage quality metrics for AI features and its hotfixes.",
+            "Led bug tracking and documentation efforts in Jira and Confluence from regression and smoke testing.",
+            "Conducted non-functional testing using Axe Devtools and Lighthouse including performance and AODA compliance accessibility testing.",
+            "Collaborated with cross-functional teams including developers, product managers, and business analysts to define test strategies and acceptance criteria."
+        ]
+    },
+    "1": {
+        "keyAchievements": "Spearheaded the development of a QA automation framework covering 90% of regression tests, which improved release cycle times by 30%.",
+        "responsibilities": [
+            "Analyzed the test reports and UI defect reports generated from the test results by test automation and took responsibility for hotfixes when defects occurred in production.",
+            "Authored and peer-reviewed key project documents including EDDs, test plans, and test cases.",
+            "Mentored junior QA engineers, providing guidance on best practices and test automation techniques.",
+            "Implemented Continuous Integration/Continuous Deployment (CI/CD) pipelines using CircleCI, improving test execution efficiency and reliability."
+        ]
+    },
+    "2": {
+        "keyAchievements": "Developed and deployed automation frameworks for iOS and web applications using Selenium and Cypress for Web pages and Appium and Detox for iOS application with 90% test coverage, significantly improving product reliability.",
+        "responsibilities": [
+            "Led testing and automation efforts across multiple projects, resulting in enhanced test coverage and efficiency.",
+            "Mentored junior QA about the test automation, QA processes, and tools according to industrial standards.",
+            "Identified and documented software defects, working closely with the development team to resolve issues and verify fixes."
+        ]
+    },
+    "3": {
+        "keyAchievements": "Created automation frameworks for house automation systems and resume parsing using Appium and Test NG for house automation system and Selenium and Cucumber for Resume Parsing Web applications with 80% coverage, improving system stability.",
+        "responsibilities": [
+            "Managed Agile development processes and conducted performance with JMeter and security testing on MQTT Protocols.",
+            "Created Framework for Test Automation and maintained good coding standards in code reviews on two different projects.",
+            "Developed and optimized Jenkins-based CI/CD pipelines, enhancing the efficiency and reliability of test execution.",
+            "Stepped up to take care of demos, and client management in the absence of the project manager with efficient communication and problem-solving skills."
+        ]
+    }
+}

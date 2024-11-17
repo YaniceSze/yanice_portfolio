@@ -1,0 +1,33 @@
+{
+    "education": [
+      {
+        "institution": "Tribhuvan University",
+        "location": "Kathmandu, Nepal",
+        "logo": "https://gurubaa.com/wp-content/uploads/2023/10/Faculty_of_Management-removebg-preview.png", 
+        "programs": [
+          {
+            "title": "Bachelor of Science in Computer Science and Information Technology",
+            "duration": "Sep 2013 – Aug 2017"
+          }
+        ]
+      },
+      {
+        "institution": "Seneca Polytechnic",
+        "location": "Toronto, ON, Canada",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Seneca-logo.svg/2560px-Seneca-logo.svg.png", 
+        "programs": [
+          {
+            "title": "Postgraduate in Business Analytics",
+            "gpa": "GPA 4.0",
+            "duration": "May 2022 – Dec 2022"
+          },
+          {
+            "title": "Postgraduate in Project Management and Information Technology",
+            "gpa": "GPA 3.9",
+            "duration": "May 2023 – Dec 2023"
+          }
+        ]
+      }
+    ]
+  }
+  
