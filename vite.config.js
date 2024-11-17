@@ -10,5 +10,5 @@ export default defineConfig({
       '@emotion/react': '@emotion/react',
     }
   },
-  base: "portfolio-auf-santosh/"
+  base: "yanice_portfolio/"
 })
