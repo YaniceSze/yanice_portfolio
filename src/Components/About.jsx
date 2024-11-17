@@ -1,5 +1,5 @@
 import React from "react";
-import formalImage from '../assets/Formal.png'; // Ensure this path is correct
+import formalImage from '../assets/Formal_Image.png'; // Ensure this path is correct
 
 const About = () => {
     return (
