@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import About from "../Components/About";
-import Hero from "../Components/Hero";
-import Experiences from "../Components/Experiences";
-import Education from "../Components/Education";
-import Contact from "../Components/Contact";
+import { ScrollTrigger } from "gsap/ScrollTrigger"; 
+import About from "../../Components/About";
+import Experiences from "../../Components/Experiences";
+import Education from "../../Components/Education";
+import Contact from "../../Components/Contact";
+import HeroSection from "../../Components/Hero";
+import SliderWithCenteredNav from "../../Components/Slider";
 
 // Register ScrollTrigger plugin with GSAP
 gsap.registerPlugin(ScrollTrigger);
@@ -44,16 +45,13 @@ function Home() {
     <div>
       {/* Add the class 'animateSection' to apply the animation to Hero and AboutUs sections */}
       <div className="animateSection">
-        <Hero/>
+        <HeroSection imageUrl={"https://www.canon.com.hk/public/article/Skill_Sharing_Photography/10328/images/06.jpg"}/>
       </div>
       <div className="animateSection">
         <About />
       </div>
       <div className="animateSection">
-        <Experiences />
-      </div>
-      <div className="animateSection">
-        <Education/>
+        <SliderWithCenteredNav/>
       </div>
       <div className="animateSection">
         <Contact/>

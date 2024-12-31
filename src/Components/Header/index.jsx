@@ -1,14 +1,14 @@
 import React from "react";
 import { GitHub, LinkedIn } from "@mui/icons-material";
-import Header from "./Header";
+import Navbar from "../Navbar";
 
 
-const Hero = () => {
+const Header = () => {
   return (
     <div>
       <section className="pt-6 pb-20 bg-gray-800 overflow-hidden">
         <div className="container mx-auto px-4">
-          <Header />
+          <Navbar />
 
           <div className="container mx-auto px-4">
             <div
@@ -65,4 +65,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Header;

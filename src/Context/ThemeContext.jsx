@@ -1,4 +1,4 @@
-// ThemeContext.js
+// ThemeContext.js (Switch the Page theme)
 import React, { createContext, useContext, useState } from 'react';
 
 const ThemeContext = createContext();

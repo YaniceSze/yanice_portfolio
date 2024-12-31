@@ -1,37 +1,48 @@
 {
     "0": {
-        "keyAchievements": "Developed a QA automation framework using Cypress that increased test coverage by 70%, significantly enhancing the quality index of the web application.",
         "responsibilities": [
-            "Generated comprehensive test reports using Confluence to manage quality metrics for AI features and its hotfixes.",
-            "Led bug tracking and documentation efforts in Jira and Confluence from regression and smoke testing.",
-            "Conducted non-functional testing using Axe Devtools and Lighthouse including performance and AODA compliance accessibility testing.",
-            "Collaborated with cross-functional teams including developers, product managers, and business analysts to define test strategies and acceptance criteria."
+            "Designed, developed, and deployed high-traffic Housing Hackathon website using React, JavaScript, and Firebase, increasing website efficiency by 80% for 500+ teams and ensuring seamless cross-device user performance.",
+            "Achieved 100% cross-platform compatibility and responsiveness by designing with Tailwind CSS, optimizing the user experience across 15+ device types and browsers.",
+            "Improved project delivery speed by 40% through agile methodologies, collaborating with 3 different teams, and integrating quality assurance practices, ensuring timely delivery and minimizing post-release issues."
         ]
     },
     "1": {
-        "keyAchievements": "Spearheaded the development of a QA automation framework covering 90% of regression tests, which improved release cycle times by 30%.",
         "responsibilities": [
-            "Analyzed the test reports and UI defect reports generated from the test results by test automation and took responsibility for hotfixes when defects occurred in production.",
-            "Authored and peer-reviewed key project documents including EDDs, test plans, and test cases.",
-            "Mentored junior QA engineers, providing guidance on best practices and test automation techniques.",
-            "Implemented Continuous Integration/Continuous Deployment (CI/CD) pipelines using CircleCI, improving test execution efficiency and reliability."
+            "Boosted Instagram followers by creating visually appealing promotional materials for Party Room events using Canva, Figma and Adobe, which effectively communicated brand identity and attracted a larger audience.",
+            "Enhanced design relevance by 40% through targeted market research to understand the preferences of the target audience, leading to more tailored and effective design concepts that resonated well with event attendees.",
+            "Reduced design turnaround time by 25% by implementing agile workflows and collaborative tools, ensuring timely release of promotional content across multiple platforms."
         ]
     },
     "2": {
-        "keyAchievements": "Developed and deployed automation frameworks for iOS and web applications using Selenium and Cypress for Web pages and Appium and Detox for iOS application with 90% test coverage, significantly improving product reliability.",
         "responsibilities": [
-            "Led testing and automation efforts across multiple projects, resulting in enhanced test coverage and efficiency.",
-            "Mentored junior QA about the test automation, QA processes, and tools according to industrial standards.",
-            "Identified and documented software defects, working closely with the development team to resolve issues and verify fixes."
+            "Assisted in the daily operation of the unit, including the support of daily administrative affairs and efficient paperwork processing, ensuring smooth daily operations.",
+            "Implemented simple IT training tools to support technology adoption for 100+ users, focusing on creating accessible and user-friendly interfaces that improved user engagement by 50%.",
+            "Enhanced community program reaches by 40% by conducting data analysis on 200+ user interactions and optimizing outreach strategies, resulting in broader user engagement and a 25% increase in attendance."
         ]
     },
     "3": {
-        "keyAchievements": "Created automation frameworks for house automation systems and resume parsing using Appium and Test NG for house automation system and Selenium and Cucumber for Resume Parsing Web applications with 80% coverage, improving system stability.",
         "responsibilities": [
-            "Managed Agile development processes and conducted performance with JMeter and security testing on MQTT Protocols.",
-            "Created Framework for Test Automation and maintained good coding standards in code reviews on two different projects.",
-            "Developed and optimized Jenkins-based CI/CD pipelines, enhancing the efficiency and reliability of test execution.",
-            "Stepped up to take care of demos, and client management in the absence of the project manager with efficient communication and problem-solving skills."
+            "Improved food safety compliance by 95% by executing safety audits based on HACCP and ISO22000 standards.",
+            "Reduced quality issues by 30% through developing detailed quality reports, test plans, and implementing corrective actions in collaboration with cross-functional teams."
+        ]
+    },
+    "4": {
+        "responsibilities": [
+            "Enhanced patient record accuracy by 40% by implementing a new system for managing medical records.",
+            "Contributed to 3 academic publications within 6 months by assisting in research projects, grading fundus photographs, and performing data analysis."
+        ]
+    },
+    "5": {
+        "responsibilities": [
+            "Improved patient dietary compliance by 25% through conducting personalized health assessments and providing tailored dietary advice",
+            "Increased engagement with nutrition-related materials by 35% by creating informative and visually appealing promotional content based on collected and analyzed data.",
+            "Assisted the dietitian in various research projects, providing critical support and insights into food and nutritional aspects, driving forward the department’s research initiatives."
+        ]
+    },
+    "6": {
+        "responsibilities": [
+            "Reduced bacterial contamination incidents by 50% by executing comprehensive food quality control experiments, including bacterial enumeration and detection.",
+            "Improved factory sanitation standards compliance by 40% through overseeing daily sample collection and implementing stricter quality assurance protocols."
         ]
     }
 }

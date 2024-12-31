@@ -4,7 +4,7 @@ function Experiences(){
     return (
         <>
 
-<section class="py-24 bg-gray-900 overflow-hidden">
+<section class="py-24 bg-gray-900 w-full overflow-hidden">
   <div class="container mx-auto px-4">
     <div class="max-w-7xl mx-auto">
       <div class="mb-10 md:max-w-4xl mx-auto text-center"><span class="inline-block mb-4 text-sm text-blue-500 font-bold uppercase tracking-widest">My Experiences</span>

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import educationData from '../Data/education.json';
+import educationData from '../../Data/education.json';
 
 const Education = () => {
     const [education, setEducation] = useState([]);
@@ -9,9 +9,9 @@ const Education = () => {
     }, []);
 
     return (
-        <section className="py-10 bg-gray-900 overflow-hidden">
+        <section className="py-24 bg-gray-900 w-full overflow-hidden">
             <div className="container mx-auto px-4">
-                <div className="py-16 px-8 bg-gray-900 border border-gray-800 rounded-3xl">
+                <div className="py-16 px-8 bg-gray-800 border border-gray-800 rounded-3xl">
                     <div className="max-w-7xl mx-auto">
                         <div className="mb-12 md:max-w-4xl mx-auto text-center">
                             <span className="inline-block mb-4 text-sm text-blue-500 font-bold uppercase tracking-widest">Education</span>
@@ -21,7 +21,7 @@ const Education = () => {
                             <div className="flex flex-wrap -m-5 mb-10">
                                 {education.map((edu) => (
                                     <div key={edu.institution} className="w-full p-5">
-                                        <div className="flex flex-wrap h-full bg-gray-800 overflow-hidden rounded-3xl">
+                                        <div className="flex flex-wrap h-full bg-gray-900 overflow-hidden rounded-3xl">
                                             <div className="w-full md:w-1/2 flex bg-white justify-center items-center"> {/* Centering the logo */}
                                                 <img 
                                                     className="max-w-full max-h-52 object-contain" // Maintain aspect ratio and set max height

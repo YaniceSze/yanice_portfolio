@@ -3,6 +3,8 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import Home from './Pages/Home'
+import { Routes, Route } from 'react-router-dom'
+import Project from './Pages/Project'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -10,7 +12,10 @@ function App() {
   return (
     <>
     
-      <Home/>
+      <Routes>
+        <Route exact path='/yanice_portfolio' element={<Home/>}/>
+        <Route path='/yanice_portfolio/projects' element={<Project/>} />
+      </Routes>
     
     </>
   )

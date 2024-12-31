@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import experienceData from '../Data/experience.json'; // Update the path as needed
-import experienceDescription from '../Data/exp-description.json'; // Update the path as needed
+import experienceData from '../../Data/experience.json'; // Update the path as needed
+import experienceDescription from '../../Data/exp-description.json'; // Update the path as needed
 
 function Experience() {
   const [isOpen, setIsOpen] = useState(true); // Default to true for the first item
@@ -22,11 +22,17 @@ function Experience() {
         const experienceDetail = experienceDescription[index]; // Adjusted to access the correct index
 
         return (
-          <div className="w-full p-3" key={index}>
-            <div className="p-10 bg-gray-900 border border-gray-800 rounded-3xl">
+          <div className="w-full p-3 text-left" key={index}>
+            <div className="p-10 bg-slate-800 border border-gray-800 rounded-3xl">
               <div className="flex flex-wrap items-center -m-4">
                 <div className="w-full md:w-1/2 p-4">
                   <h2 className="font-heading mb-2 text-3xl text-white font-black tracking-tight">{experience.title}</h2>
+                  <div className="flex items-center">
+                      <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M5 2.5C3.61929 2.5 2.5 3.61929 2.5 5V15C2.5 16.3807 3.61929 17.5 5 17.5H15C16.3807 17.5 17.5 16.3807 17.5 15V5C17.5 3.61929 16.3807 2.5 15 2.5H5ZM7 6.5H9V8.5H7V6.5ZM11 6.5H13V8.5H11V6.5ZM7 10.5H9V12.5H7V10.5ZM11 10.5H13V12.5H11V10.5Z" fill="#374151"/>
+                      </svg>
+                        <p className="text-gray-500 font-bold">{experience.company}</p>
+                    </div>
                   <div className="flex flex-wrap -m-3">
                     <div className="flex flex-wrap items-center w-auto p-3">
                       <svg className="mr-2" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -53,7 +59,7 @@ function Experience() {
                     <div className="w-full md:w-auto p-2">
                       <button 
                         onClick={() => toggleDetails(index)} 
-                        className="block w-full px-8 py-3.5 text-lg text-center text-white font-bold bg-gray-800 hover:bg-gray-700 focus:ring-4 focus:ring-gray-600 rounded-full"
+                        className="block w-full px-8 py-3.5 text-lg text-center text-white font-bold bg-blue-500 hover:bg-gray-700 focus:ring-4 focus:ring-gray-600 rounded-full"
                       >
                         {isOpen && selectedExperience === index ? "Hide Details" : "See Details"}
                       </button>
@@ -62,9 +68,8 @@ function Experience() {
                 </div>
               </div>
               {isOpen && selectedExperience === index && (
-                <div className="mt-4 bg-gray-900 p-6 rounded-lg shadow-lg border border-gray-700">
+                <div className="mt-4 bg-gray-900 p-6 rounded-3xl shadow-lg border border-gray-900">
                   <h3 className="text-white font-bold text-xl mb-2">Description:</h3>
-                  <p className="text-gray-300 mb-4">{experienceDetail?.keyAchievements}</p>
                   <ul className="text-gray-300 list-disc list-inside">
                     {experienceDetail?.responsibilities.map((item, idx) => (
                       <li key={idx} className="ml-2">{item}</li>
