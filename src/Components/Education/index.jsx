@@ -9,50 +9,70 @@ const Education = () => {
     }, []);
 
     return (
-        <section className="py-24 bg-gray-900 w-full overflow-hidden">
-            <div className="container mx-auto px-4">
-                <div className="py-16 px-8 bg-gray-800 border border-gray-800 rounded-3xl">
-                    <div className="max-w-7xl mx-auto">
-                        <div className="mb-12 md:max-w-4xl mx-auto text-center">
-                            <span className="inline-block mb-4 text-sm text-blue-500 font-bold uppercase tracking-widest">Education</span>
-                            <h2 className="font-heading mb-6 text-4xl md:text-5xl lg:text-6xl text-white font-black tracking-tight">My Educational Background</h2>
+        <section className="relative bg-gray-800 overflow-hidden">
+            <div className="container px-4 mx-auto">
+                {/* Title Section */}
+                <div className="text-center py-8">
+                    <h1 className="text-4xl md:text-5xl xl:text-6xl text-white font-extrabold leading-tight">
+                        My Academics
+                    </h1>
+                </div>
+
+                {education.map((edu) => (
+                    <div
+                        key={edu.institution}
+                        className="flex flex-col lg:flex-row gap-12 justify-between py-16"
+                    >
+                        {/* Logo Section */}
+                        <div className="w-full bg-white lg:w-1/2 flex justify-center items-center">
+                            <div className="max-w-md bg-white lg:max-w-lg">
+                                <img
+                                    className="shadow-md rounded-2xl bg-white max-w-full max-h-96 object-contain"
+                                    src={edu.logo}
+                                    alt={`${edu.institution} Logo`}
+                                />
+                            </div>
                         </div>
-                        <div className="max-w-5xl mx-auto">
-                            <div className="flex flex-wrap -m-5 mb-10">
-                                {education.map((edu) => (
-                                    <div key={edu.institution} className="w-full p-5">
-                                        <div className="flex flex-wrap h-full bg-gray-900 overflow-hidden rounded-3xl">
-                                            <div className="w-full md:w-1/2 flex bg-white justify-center items-center"> {/* Centering the logo */}
-                                                <img 
-                                                    className="max-w-full max-h-52 object-contain" // Maintain aspect ratio and set max height
-                                                    src={edu.logo} 
-                                                    alt={`${edu.institution} Logo`} 
-                                                />
-                                            </div>
-                                            <div className="flex-1">
-                                                <div className="md:max-w-lg p-10 h-full">
-                                                    <div className="flex flex-col justify-between h-full">
-                                                        <div className="flex-initial mb-8">
-                                                            <h3 className="font-heading text-2xl text-white font-black">{edu.institution}</h3>
-                                                            <p className="text-white">{edu.location}</p>
-                                                            {edu.programs.map((program, index) => (
-                                                                <div key={index} className="mt-4">
-                                                                    <h4 className="text-white">{program.title}</h4>
-                                                                    <p className="text-white">{program.gpa ? program.gpa : ""}</p>
-                                                                    <p className="text-white">{program.duration}</p>
-                                                                </div>
-                                                            ))}
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+
+                        {/* Academic Details Section */}
+                        <div className="w-full text-left bg-gray-700 rounded-lg lg:w-1/2 p-6">
+                            <div className="max-w-md lg:max-w-xl mx-auto">
+                                <div className="mb-12">
+                                    <h1 className="text-3xl text-amber-500 md:text-4xl xl:text-5xl text-rhino-700 font-bold mb-3 leading-none">
+                                        {edu.institution}
+                                    </h1>
+                                    <p className="text-rhino-300 text-lg font-normal mb-6">
+                                        {edu.location}
+                                    </p>
+                                    {edu.programs.map((program, index) => (
+                                        <div key={index} className="mb-6">
+                                            <h2 className="text-2xl text-rhino-700 font-semibold mb-1">
+                                                {program.title}
+                                            </h2>
+                                            <p className="text-rhino-300 text-lg mb-1">
+                                                {program.duration}
+                                            </p>
+                                            {program.gpa && (
+                                                <p className="text-rhino-300 text-lg">{program.gpa}</p>
+                                            )}
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
+                                </div>
+                                <hr/>
+                                <div>
+                                    <h3 className="text-lg font-semibold mt-10 mb-2">
+                                        Description:
+                                    </h3>
+                                    <ul className="list-disc list-inside text-rhino-300 text-lg">
+                                        {edu.description.map((point, index) => (
+                                            <li key={index}>{point}</li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                ))}
             </div>
         </section>
     );

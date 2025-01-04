@@ -1,50 +1,84 @@
-import React, { useState } from "react";
-import Experience from "../Experiences"; 
+import React, { useState, useCallback, useMemo, useTransition, useRef, useEffect } from "react";
+import { motion, AnimatePresence, useAnimation, useInView } from "framer-motion";
+import Experience from "../Experiences";
 import Education from "../Education";
 import Projects from "../Projects";
 
-const SliderWithCenteredNav = () => {
-  const [activePage, setActivePage] = useState(0); // 0: Experience, 1: Education, 2: Projects
-  const pages = [<Experience />, <Education />, <Projects />];
+const SliderWithInteractiveNav = () => {
+  const [activePage, setActivePage] = useState(0);
+  const [isPending, startTransition] = useTransition();
+  const sectionRef = useRef(null);
+  const isInView = useInView(sectionRef, { once: true, amount: 0.2 });
+  const mainControls = useAnimation();
+
+  const pages = useMemo(
+    () => [
+      { label: "Experience", component: <Experience /> },
+      { label: "Education", component: <Education /> },
+      { label: "Projects", component: <Projects /> },
+    ],
+    []
+  );
+
+  const handlePageClick = useCallback((index) => {
+    startTransition(() => {
+      setActivePage(index);
+    });
+  }, []);
+
+  useEffect(() => {
+    if (isInView) {
+      mainControls.start("visible");
+    }
+  }, [isInView, mainControls]);
 
   return (
-    <div className="w-full flex flex-col h-full bg-gray-900">
+    <div ref={sectionRef} className="w-full h-full flex flex-col bg-gray-700">
       {/* Centered Navbar */}
-      <nav className="flex items-center justify-center py-4 bg-gray-900 text-white">
-        <ul className="flex space-x-12 mx-auto  py-4 px-4 md:px-40">
-          {["Experience", "Education", "Projects"].map((label, index) => (
-            <li key={index}>
-              <a
-                className={`text-coolGray-500 hover:text-orange-500 text-white text-xl lg:text-5xl text-bold hover:underline font-sans md:text-3xl ${
-                  activePage === index ? "" : "text-orange-500"
+      <motion.nav
+        initial="hidden"
+        animate={mainControls}
+        variants={{
+          hidden: { opacity: 0, y: -20 },
+          visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
+        }}
+        className="flex items-center justify-center py-4 bg-gray-700 text-white"
+      >
+        <ul className="flex overflow-x-auto space-x-4 md:space-x-12 px-4">
+          {pages.map((page, index) => (
+            <li key={index} className="flex-shrink-0">
+              <button
+                className={`text-base md:text-2xl font-semibold ${
+                  activePage === index ? "text-orange-500 underline" : "text-coolGray-500" /* active nav button */
                 }`}
-                onClick={() => setActivePage(index)}
+                onClick={() => handlePageClick(index)}
               >
-                {label}
-              </a>
+                {page.label}
+              </button>
             </li>
           ))}
         </ul>
-      </nav>
+      </motion.nav>
 
-      {/* Slider Content */}
-      <div className="relative overflow-hidden flex-grow h-full">
-        <div
-          className="flex transition-transform duration-500 ease-in-out h-full"
-          style={{ transform: `translateX(-${activePage * 100}%)` }}
-        >
-          {pages.map((Page, index) => (
-            <div
-              key={index}
-              className="flex-shrink-0 w-screen h-full flex items-center justify-center bg-gray-900 shadow-lg"
+      {/* Dynamic Content */}
+      <div className="relative flex-grow flex items-center justify-center p-4">
+        <AnimatePresence mode="wait" initial={false}>
+          {!isPending && (
+            <motion.div
+              key={activePage}
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.4 }}
+              className="w-full h-full bg-gray-800 rounded-lg p-6 shadow-lg"
             >
-              {Page}
-            </div>
-          ))}
-        </div>
+              {pages[activePage].component}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
     </div>
   );
 };
 
-export default SliderWithCenteredNav;
+export default SliderWithInteractiveNav;

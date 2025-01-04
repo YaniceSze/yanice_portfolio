@@ -1,17 +1,6 @@
 {
   "education": [
     {
-      "institution": "The Chinese University of Hong Kong",
-      "location": "Hong Kong",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/50/Emblem_of_CU.png", 
-      "programs": [
-        {
-          "title": "Bachelor of Science in Food and Nutritional Sciences",
-          "duration": "Sep 2016 – Jul 2020"
-        }
-      ]
-    },
-    {
       "institution": "Seneca Polytechnic",
       "location": "Toronto, ON, Canada",
       "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Seneca-logo.svg/2560px-Seneca-logo.svg.png", 
@@ -21,6 +10,27 @@
           "gpa": "GPA 3.9",
           "duration": "May 2023 – Aug 2024"
         }
+      ],
+      "description": [
+        "Awarded SSF Int’l Student Bursaries and multiple President Honors.",
+        "Gained the expertise needed for software, web and mobile applications design, development, and deployment.",
+        "Worked in a team and adapted to agile environment using project management tools like Jira, and MS Project."
+      ]
+    },
+    {
+      "institution": "The Chinese University of Hong Kong",
+      "location": "Hong Kong",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/50/Emblem_of_CU.png", 
+      "programs": [
+        {
+          "title": "Bachelor of Science in Food and Nutritional Sciences",
+          "duration": "Sep 2016 – Jul 2020"
+        }
+      ],
+      "description": [
+        "Comprehensive curriculum with practical and theoretical knowledge.",
+        "Part of organizing associations in science field and actively engaged in volunteering activities",
+        "Strong focus on analytical and problem-solving skills."
       ]
     }
   ]
