@@ -53,14 +53,14 @@ const Education = () => {
                                                 {program.duration}
                                             </p>
                                             {program.gpa && (
-                                                <p className="text-rhino-300 text-lg">{program.gpa}</p>
+                                                <p className="text-rhino-300 font-bold text-amber-500 text-lg">{program.gpa}</p>
                                             )}
                                         </div>
                                     ))}
                                 </div>
                                 <hr/>
                                 <div>
-                                    <h3 className="text-lg font-semibold mt-10 mb-2">
+                                    <h3 className="text-2xl font-bold text-red-500 mt-10 mb-2">
                                         Description:
                                     </h3>
                                     <ul className="list-disc list-inside text-rhino-300 text-lg">

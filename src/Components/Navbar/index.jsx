@@ -16,7 +16,7 @@ function Navbar() {
         {/* Call to Action buttons */}
         <div className="w-auto flex items-center space-x-4">
           <a
-            className="text-white hover:bg-orange-700 rounded-full p-2"
+            className="text-white hover:bg-orange-400 rounded-full p-2"
             href="https://github.com/YaniceSze"
             target="_blank"
             rel="noopener noreferrer"
@@ -24,7 +24,7 @@ function Navbar() {
             <GitHub className="h-6 w-6" />
           </a>
           <a
-            className="text-white hover:bg-blue-600 rounded-full p-2"
+            className="text-white hover:bg-blue-400 rounded-full p-2"
             href="https://www.linkedin.com/in/yanice-sze-959013146"
             target="_blank"
             rel="noopener noreferrer"
