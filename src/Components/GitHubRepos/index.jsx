@@ -114,13 +114,13 @@ const GitHubRepos = () => {
               key={repo.id}
               className="w-full lg:w-1/3 p-4 rounded-xl border bg-gray-900 border-gray-300 dark:border-gray-300 shadow-md hover:shadow-lg transform hover:scale-105 transition"
             >
-              <h3 className="text-xl font-semibold text-blue-500 mb-2 text-center">
+              <h3 className="text-xs md:text-xl font-semibold text-blue-500 mb-2 text-center">
                 {repo.name}
               </h3>
-              <p className="text-sm text-black dark:text-gray-300 text-center mb-3">
+              <p className="text-xs md:text-sm text-black dark:text-gray-300 text-center mb-3">
                 {repo.description}
               </p>
-              <div className="flex justify-center gap-4 mb-2">
+              <div className="flex text-xs md:text-sm justify-center gap-4 mb-2">
                 {repo.language && (
                   <span className="text-gray-500 flex items-center">
                     {renderDevicon(repo.language)}

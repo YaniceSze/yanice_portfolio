@@ -48,7 +48,7 @@ const SliderWithInteractiveNav = () => {
           {pages.map((page, index) => (
             <li key={index} className="flex-shrink-0">
               <button
-                className={`text-base md:text-2xl font-semibold ${
+                className={`text-sm md:text-2xl font-semibold ${
                   activePage === index ? "text-orange-500 underline" : "text-coolGray-500" /* active nav button */
                 }`}
                 onClick={() => handlePageClick(index)}

@@ -7,12 +7,12 @@ const About = () => {
             <div className="px-4 mx-auto text-left sm:px-6 lg:px-8 max-w-7xl">
                 <div className="grid items-center grid-cols-1 md:grid-cols-2 gap-12">
                     <div>
-                        <h2 className="text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl lg:text-5xl">
+                        <h2 className="text-2xl font-bold leading-tight text-black dark:text-white md:text-4xl lg:text-5xl">
                             Hey 👋 I am <br className="block sm:hidden" /> <br />
                             <span className="text-yellow-400 dark:text-yellow-300">Yanice Sze</span>
                         </h2>
 
-                        <p className="max-w-lg font-bold mt-6 text-lg leading-relaxed text-gray-600 dark:text-gray-300 md:mt-8">
+                        <p className="max-w-lg font-bold mt-6 text-base md:text-lg leading-relaxed text-gray-600 dark:text-gray-300 md:mt-8">
                             Front-end Software Developer with hands-on experiences in designing, developing, and testing software applications. 
                         </p>
 
@@ -23,7 +23,7 @@ const About = () => {
                             <li className="ml-2">Actively participate in open source projects and IT communities in order to keep up with industry advancements.</li>
                         </ul>
 
-                        <p className="mt-8 text-xl text-gray-600 dark:text-gray-300">
+                        <p className="mt-8 text-base md:text-xl text-gray-600 dark:text-gray-300">
                             <span className="relative inline-block">
                                 <span className="absolute inline-block w-full bottom-0.5 h-2 bg-yellow-300 dark:bg-gray-700"></span>
                                 <span className="relative font-semibold">Have a question?</span>
@@ -43,9 +43,9 @@ const About = () => {
 
                     <div className="relative">
                         <img
-                            className="absolute inset-x-0 bottom-[-10] -translate-x-1/2 left-1/2 "
+                            className="absolute inset-x-0 bottom-[-10] -translate-x-1/2 left-1/2"
                             src="https://cdn.rareblocks.xyz/collection/celebration/images/team/1/blob-shape.svg"
-                            alt=""
+                            alt="Image Background"
                         />
                         <img
                             className="relative w-full xl:max-w-lg xl:mx-auto 2xl:origin-bottom 2xl:scale-110"
