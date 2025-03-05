@@ -35,7 +35,7 @@ const Education = () => {
                         </div>
 
                         {/* Academic Details Section */}
-                        <div className="w-full text-left bg-gray-700 rounded-lg lg:w-1/2 p-6">
+                        <div className="w-full text-left bg-gray-300 dark:bg-gray-700 rounded-lg lg:w-1/2 p-6">
                             <div className="max-w-md lg:max-w-xl mx-auto">
                                 <div className="mb-12">
                                     <h1 className="text-xl text-amber-500 md:text-4xl xl:text-5xl text-rhino-700 font-bold mb-3 leading-none">

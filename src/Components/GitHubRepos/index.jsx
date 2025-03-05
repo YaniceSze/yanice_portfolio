@@ -117,7 +117,7 @@ const GitHubRepos = () => {
               <h3 className="text-xs md:text-xl font-semibold text-blue-500 mb-2 text-center">
                 {repo.name}
               </h3>
-              <p className="text-xs md:text-sm text-black dark:text-gray-300 text-center mb-3">
+              <p className="text-xs md:text-sm text-gray-300 text-center mb-3">
                 {repo.description}
               </p>
               <div className="flex text-xs md:text-sm justify-center gap-4 mb-2">

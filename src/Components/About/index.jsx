@@ -16,7 +16,7 @@ const About = () => {
                             Front-end Software Developer with hands-on experiences in designing, developing, and testing software applications. 
                         </p>
 
-                        <ul className="text-gray-300 mt-8 list-disc list-inside">
+                        <ul className=" text-gray-600 dark:text-gray-300 mt-8 list-disc list-inside">
                             <li className="ml-2">Analytical and detail-oriented front-end software developer passionate about creating user-friendly software applications.</li>
                             <li className="ml-2">Proficient in JavaScript and React, with a strong foundation in agile methodologies and version control.</li>
                             <li className="ml-2">Demonstrated ability to solve complex software problems and deliver innovative solutions based on client needs.</li>
