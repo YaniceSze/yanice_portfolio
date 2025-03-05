@@ -58,7 +58,7 @@ const Education = () => {
                                         </div>
                                     ))}
                                 </div>
-                                <hr/>
+                                <hr className="h-px my-8 dark:bg-gray-200 border-0 bg-gray-700"/>
                                 <div>
                                     <h3 className="text-lg md:text-2xl font-bold text-red-500 mt-10 mb-2">
                                         Description:
