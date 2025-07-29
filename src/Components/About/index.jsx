@@ -13,13 +13,13 @@ const About = () => {
                         </h2>
 
                         <p className="max-w-lg font-bold mt-6 text-base md:text-lg leading-relaxed text-gray-600 dark:text-gray-300 md:mt-8">
-                            Front-end Software Developer with hands-on experiences in designing, developing, and testing software applications. 
+                            Front-end Software Developer and QA Anaylst with hands-on experiences in designing, developing, testing and deploying software applications. 
                         </p>
 
-                        <ul className=" text-gray-600 dark:text-gray-300 mt-8 list-disc list-inside">
-                            <li className="ml-2">Analytical and detail-oriented front-end software developer passionate about creating user-friendly software applications.</li>
-                            <li className="ml-2">Proficient in JavaScript and React, with a strong foundation in agile methodologies and version control.</li>
-                            <li className="ml-2">Demonstrated ability to solve complex software problems and deliver innovative solutions based on client needs.</li>
+                        <ul className=" text-gray-600 dark:text-gray-300 mt-8 md:mr-16 list-disc list-inside">
+                            <li className="ml-2">Detail-oriented and analytical, with a passion for creating intuitive, accessible, and user-friendly software applications.</li>
+                            <li className="ml-2">Proficient in JavaScript, React and Cypress, with a strong foundation in agile methodologies, version control and continuous testing practices.</li>
+                            <li className="ml-2">Demonstrated ability to identify and resolve complex software problems and deliver innovative solutions based on client needs.</li>
                             <li className="ml-2">Actively participate in open source projects and IT communities in order to keep up with industry advancements.</li>
                         </ul>
 
